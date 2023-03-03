@@ -5,6 +5,9 @@ import Box from './Box'
 
 
 export default function App() {
+
+  console.log(Canvas);
+
   return (
     <Canvas>
       <ambientLight intensity={0.5} />
@@ -17,4 +20,4 @@ export default function App() {
   )
 }
 
-console.log(ambientLight);
+
