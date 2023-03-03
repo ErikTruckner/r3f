@@ -17,4 +17,4 @@ export default function App() {
   )
 }
 
-console.log(Canvas);
+console.log(ambientLight);
