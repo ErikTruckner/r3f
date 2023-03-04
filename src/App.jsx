@@ -5,14 +5,17 @@ import { OrbitControls } from '@react-three/drei'
 // import Castle from './Castle'
 // import SimpleSolarSystem from './SimpleSolarSystem'
 import ComplexSolarSystem from './ComplexSolarSystem'
+import { Stars } from '@react-three/drei'
 
 export default function App() {
   console.log(Canvas)
 
   return (
     <Canvas>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} />
+      <color args={['#000000']} attach='background' />
+      <Stars />
+      {/* <ambientLight /> */}
+      <pointLight intensity={0.9} position={[0, 0, 0]} />
       <ComplexSolarSystem />
       {/* <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
